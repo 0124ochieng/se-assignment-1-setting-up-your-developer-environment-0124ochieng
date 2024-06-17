@@ -141,27 +141,27 @@ Now that you have Git on your system, you’ll want to do a few things to custom
 Your Identity
 The first thing you should do when you install Git is to set your user name and email address. This is important because every Git commit uses this information, and it’s immutably baked into the commits you start creating:
 
-$ git config --global user.name "John Doe"
-$ git config --global user.email johndoe@example.com
+                $ git config --global user.name "John Doe"
+                $ git config --global user.email johndoe@example.com
 
 Your Editor
 Now that your identity is set up, you can configure the default text editor that will be used when Git needs you to type in a message. If not configured, Git uses your system’s default editor.
 
 If you want to use a different text editor, such as visual studio code, you can do the following:
 
-$ git config --global core.editor code
+                $ git config --global core.editor code
 
 Checking Your Settings
 If you want to check your configuration settings, you can use the git config --list command to list all the settings Git can find at that point:
 
-$ git config --list
-user.name=John Doe
-user.email=johndoe@example.com
+                $ git config --list
+                user.name=John Doe
+                user.email=johndoe@example.com
 
 Getting Help
 If you ever need help while using Git, there are three equivalent ways to get the comprehensive manual page (manpage) help for any of the Git commands:
 
-$ git help 
+                $ git help 
 
 **GitHub**
 The first thing you need to do is set up a free user account. Simply visit https://github.com, choose a user name that isn’t already taken, provide an email address and a password, and click the big green “Sign up for GitHub” button.
@@ -183,5 +183,73 @@ Once you have copied the code; open Git Bash (Remember to run it in admin mode).
 Type the following code to clone your remote repository on to your local repository:
             git clone *code from your remote repo*
 To track the changes in your file initialize git in your directory.
-            cd *Your preferred repo*
+            cd *Your preferred repository*
             git init.
+
+**Installing Python**
+To install Python, head over to the official Python download website through the following link: https://www.python.org/downloads/
+![Main page](Screenshots\image38.png) 
+
+Click "download Python 3.12.4" to initialize the download. You can track your download progress by clicking te download icon.
+
+Next, run the .exe file that you just downloaded, and then follow the installation instructions.
+When it is done installing, click finish.
+
+In the Windows search bar, type in python.exe, but don’t click on it in the menu. Instead, right-click on it, and select Open file location 
+![Main page](Screenshots\image40.png) 
+
+A window will open up with some files and folders: this should be where Python is installed. Right-click on the address bar at the top and select Copy address as text.
+![Main page](Screenshots\image41.png) 
+
+In the search box on the top right, type in environment, and in the search results, click on Edit environment variables for your account:
+![Main page](Screenshots\image43.png) 
+
+If there is already a variable listed called Path, click on it to select it, then click Edit…. If it does not exist, instead click New….
+![Main page](Screenshots\image44.png) 
+
+If your pop-up box looks like the image below, click New and then paste in the address you just copied. Then click New again, paste in the address again, and add Scripts\ at the end. Click OK twice to finish editing your environment variables.
+![Main page](Screenshots\image46.png) 
+
+Now that you can use Python from the command line, you can use pip! The following instructions should work for Python version 3.4 and above. If you are using an older version of Python, you can upgrade Python via the Python website.
+
+In the command prompt window, type the following command to upgrade pip:
+
+                python -m pip install -U pip
+                Other pip commands
+
+    Upgrade an already installed module
+                pip install --upgrade name_of_module
+    Uninstall a module:
+                pip uninstall name_of_module
+    List installed modules:
+                pip list
+
+**MySQL**
+To download the MySQL community server, head to: https://dev.mysql.com/downloads/mysql/ 
+
+1. "Choosing a Setup Type" screen: Choose "Full" setup type. This installs all MySQL products and features. Then click the "Next" button to continue.
+
+2. "Check Requirements" screen: The installer checks if your pc has the requirements needed. If there is some failing requirements, click on each item to try to resolve them by clicking on the Execute button that will install all requirements automatically. Click "Next".
+
+3. "Installation" screen: See what products that will be installed. Click "Execute" to download and install the Products. After finishing the installation, click "Next".
+
+4. "Product Configuration" screen: See what products that will be configured. Click the "MySQL Server 8.0.23" option to configure the MySQL Server. Click the "Next" button. Choose the "Standalone MySQL Server/Classic MySQL Replication" option and click on the "Next" button. In page  "Type and Networking" set Config Type to "Development Computer" and "Connectivity" to "TCP/IP" and "Port" to "3006". Then, click the "Next" button.
+
+5. "Authentication Method" screen: Choose "Use Strong Password Encryption for Authentication". Click "Next".
+
+6. "Accounts and Roles" screen: Set a password for the root account. Click "Next".
+
+7. "Windows Service" screen: Here, you configure the Windows Service to start the server. Keep the default setup, then click "Next".
+
+8. "Apply Configuration" screen: Click the "Execute" button to apply the Server configuration. After finishing, click the "Finish" button.
+
+9. "Product Configuration" screen: See that the Product Configuration is completed. Keep the default setting and click on the "Next" and "Finish" button to complete the MySQL package installation.
+
+10. In the next screen, you can choose to configure the Router. Click on "Next", "Finish" and then click the "Next" button.
+
+11. "Connect To Server" screen: Type in the root password (from step 6). Click the "Check" button to check if the connection is successful or not. Click on the "Next" button.
+
+12. "Apply Configuration" screen: Select the options and click the "Execute" button. After finishing, click the "Finish" button.
+
+13. "Installation Complete" screen: The installation is complete. Click the "Finish" button.
+
