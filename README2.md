@@ -190,7 +190,7 @@ To track the changes in your file initialize git in your directory.
 To install Python, head over to the official Python download website through the following link: https://www.python.org/downloads/
 ![Main page](Screenshots\image38.png) 
 
-Click "download Python 3.12.4" to initialize the download. You can track your download progress by clicking te download icon.
+Click "download Python 3.12.4" to initialize the download. You can track your download progress by clicking the download icon.
 
 Next, run the .exe file that you just downloaded, and then follow the installation instructions.
 When it is done installing, click finish.
