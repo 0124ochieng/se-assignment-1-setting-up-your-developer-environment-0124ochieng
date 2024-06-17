@@ -2,7 +2,7 @@
 
 To install Windows 11, head to: https://www.microsoft.com/software-download/windows11
 
-![Main page](`/Screenshots/image1.png)
+![Main page](\Screenshots\image1.png)
 
 At this page, select the option that suits the operation that you would like to perform.
 
